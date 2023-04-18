@@ -1,0 +1,14 @@
+#reload the service files to include the new service
+sudo systemctl daemon-reload
+
+#start your service
+sudo systemctl start your-service.service
+
+#service status
+sudo systemctl status example.service
+
+#enable service on every reboot
+sudo systemctl enable example.service
+
+#to disable your service on every reboot
+sudo systemctl disable example.service

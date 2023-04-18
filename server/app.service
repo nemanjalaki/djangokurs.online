@@ -1,0 +1,15 @@
+[Unit]
+Description=uWSGI instance to serve djangokurs.online project
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/laki/djangokurs.online
+Environment="PATH=/home/laki/djangokurs.online/.venv/bin"
+ExecStart=/home/laki/djangokurs.online/.venv/bin/uwsgi --ini server/uwsgi.ini
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
