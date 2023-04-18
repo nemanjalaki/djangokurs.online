@@ -30,6 +30,8 @@ router = routers.DefaultRouter()
 
 router.register(r'posts', views.PostViewSet)
 router.register(r'authors', views.AuthorViewSet)
+router.register(r'comments', views.CommentViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -37,6 +39,7 @@ urlpatterns = [
 
 urlpatterns += [
     path('', include(router.urls)),
+    # path('', include(router.urls)),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
