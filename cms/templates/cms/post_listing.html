@@ -1,0 +1,32 @@
+   {% extends 'base.html' %}
+
+   {% block content %}
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Blog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="/blog/posts">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about-me">About me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <h1>All Posts</h1>
+    {% for post in posts %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <h5 class="card-title">{{ post.id }}</h5>
+            <a href="{{post.id}}" class="btn btn-primary">See details</a>
+        </div>
+    </div>
+    {% endfor %}
+    {% endblock %}

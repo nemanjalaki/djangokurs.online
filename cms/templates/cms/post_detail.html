@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="/blog/posts/" class="btn btn-primary">Back to all posts</a>
+    <h1>Post details</h1>
+
+    <div class="card" style="width: 18rem;">
+        <!-- <img src="{{ Post.image }}" class="card-img-top" alt="vinyl"> -->
+        <div class="card-body">
+            <p class="card-text"><b>Post by: {{ post.author }}</b></p>
+            <h5 class="card-title">{{ post.title }}</h5>
+            <h5 class="card-title">{{ post.id }}</h5>
+            <!-- {% if Post.can_rock %}
+                <h5 class="card-text">This Post can rock!</h5>
+            {% else %}
+                <h5 class="card-text">This Post cant rock!</h5>
+            {% endif %} -->
+            <p class="card-text">{{ post.body }}</p>
+            {% for comment in post.comment_post.all %}
+            <div class="card" style="width: 14rem;">
+                <p class="card-text"><b>Comment by: {{comment.author}}</b></p>
+                <!-- <p class="card-text">{{comment.id}}</p> -->
+                <p class="card-text">{{comment.body}}</p>
+            </div>
+            {% endfor %}
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <!-- <a href="#" class="btn btn-primary">See details</a> -->
+        </div>
+    </div>
+    {% endblock %}

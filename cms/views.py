@@ -1,41 +1,23 @@
 from django.shortcuts import render
-from rest_framework import viewsets, mixins
-from rest_framework import generics
-
-from rest_framework.renderers import TemplateHTMLRenderer
-from rest_framework.response import Response
-from rest_framework.views import APIView
-
 from .models import Author, Post, Comment
-from .serializers import AuthorSerializer, PostSerializer, CommentSerializer
 
+def post_listing(request):
+    """A view of all posts."""
+    posts = Post.objects.all()
+    return render(request, 'cms/post_listing.html', {'posts': posts})
 
-# Create your views here.
-class AuthorViewSet(mixins.ListModelMixin,
-                  mixins.CreateModelMixin,
-                  mixins.RetrieveModelMixin,
-                  mixins.UpdateModelMixin,
-                  viewsets.GenericViewSet):
-    queryset = Author.objects.all().order_by('id')
-    serializer_class = AuthorSerializer
+def post_detail(request, post_id):
+    """A view of all posts."""
+    post = Post.objects.get(pk=post_id)
+    try:
+        comments = Comment.objects.all()
+    except Comment.DoesNotExist:
+        comments = "There are no comments on this"
+    # comment = Comment.objects.filter(pk=post_id)
+    return render(request, 'cms/post_detail.html', {'post': post, 'comments':comments})
 
-    search_fields = ['name', 'surname']
+def homepage(request):
+    return render(request, 'cms/homepage.html', {})
 
-class PostViewSet(mixins.ListModelMixin,
-                  mixins.CreateModelMixin,
-                  mixins.RetrieveModelMixin,
-                  mixins.UpdateModelMixin,
-                  viewsets.GenericViewSet):
-    queryset = Post.objects.all().order_by('id')
-    serializer_class = PostSerializer
-
-    search_fields = ['title', 'body']
-
-class CommentViewSet(mixins.ListModelMixin,
-                  mixins.CreateModelMixin,
-                  mixins.RetrieveModelMixin,
-                  mixins.UpdateModelMixin,
-                  viewsets.GenericViewSet):
-    queryset = Comment.objects.all().order_by('id')
-    serializer_class = CommentSerializer
-
+def about_me(request):
+    return render(request, 'cms/about.html', {})

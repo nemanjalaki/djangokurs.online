@@ -19,7 +19,7 @@ class Post(models.Model):
     author = models.ForeignKey(Author,related_name='post_author', on_delete=models.DO_NOTHING)
 
     def __str__(self):
-        return f'{self.title} {self.body} {self.author}'
+        return f'{self.body}'
     
 class Comment(models.Model):
     created = models.DateTimeField(auto_now_add=True)
@@ -27,5 +27,8 @@ class Comment(models.Model):
     author = models.ForeignKey(Author,related_name='comment_author', on_delete=models.DO_NOTHING)
     post = models.ForeignKey(Post,related_name='comment_post', on_delete=models.DO_NOTHING)
 
+    # class Meta: 
+        # unique_together = ('body', 'post',)
+
     def __str__(self):
-        return f'{self.body} {self.author} {self.post}'
+        return f'{self.body}'
