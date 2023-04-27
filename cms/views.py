@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Author, Post, Comment
+from .forms import PostForm
 
 def post_listing(request):
     """A view of all posts."""
@@ -21,3 +22,10 @@ def homepage(request):
 
 def about_me(request):
     return render(request, 'cms/about.html', {})
+
+def add_post(request):
+    form = PostForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+
+    return render(request, 'cms/add-post.html', {'form':form})
