@@ -16,6 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 
+import debug_toolbar
+from django.conf import settings
+
 from django.urls import path, include
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -40,6 +43,8 @@ urlpatterns += [
     # path('', include(router.urls)),
     path('', include('cms.urls')),
     path('blog/', include('cms.urls')),
+    path('__debug__/', include(debug_toolbar.urls)),
+
     # path('', include(router.urls)),
     # path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     # path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
