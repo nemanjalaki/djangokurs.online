@@ -1,0 +1,332 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$rj7DEDD4njsDzDQWD2HwbE$RbbReJleLfTQ3Xo5OLllCmLWVKP2XKVbEqRyQsAJbnE=",
+    "last_login": "2023-04-28T08:39:05.494Z",
+    "is_superuser": true,
+    "username": "laki",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-04-18T07:22:57.506Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$ATW6VBQpwWTuiPwCOxEGlp$B6pxA/Aj1Pq3ZLnbOQGzN0vk+DTQqzpfEMsrUDX6IXo=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "django",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-04-28T08:41:58.156Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7u52uacqm3nojg1k7sui765zicrikpuf",
+  "fields": {
+    "session_data": ".eJxVjEEOgjAQRe_StWksHYeOS_ecoRk6HYsaSCisjHcXEha6_e-9_zaR16XEteY5DmKuxpnT79ZzeuZxB_Lg8T7ZNI3LPPR2V-xBq-0mya_b4f4dFK5lqzFIj04T-UTatBpUxRGBePQON3aRJoMCQ0usGJI_M7bkPCA1oNl8vu6lN80:1psJdB:xHfdJzEuH8NnC1htaa9JjyQplCwF_m_7gCPs5KdkbYQ",
+    "expire_date": "2023-05-12T08:39:05.527Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wc0pvfsovrnncabopshoz2vr34gokvkl",
+  "fields": {
+    "session_data": ".eJxVjEEOgjAQRe_StWksHYeOS_ecoRk6HYsaSCisjHcXEha6_e-9_zaR16XEteY5DmKuxpnT79ZzeuZxB_Lg8T7ZNI3LPPR2V-xBq-0mya_b4f4dFK5lqzFIj04T-UTatBpUxRGBePQON3aRJoMCQ0usGJI_M7bkPCA1oNl8vu6lN80:1poseF:BcxtAUPV8EkdSvI3mUiUTdmVY8pfLTovNC7cMsSQPug",
+    "expire_date": "2023-05-02T21:13:59.877Z"
+  }
+},
+{
+  "model": "cms.author",
+  "pk": 1,
+  "fields": {
+    "user": null,
+    "name": "Nemanja",
+    "surname": "Lakicevic",
+    "birth_date": "1994-02-21"
+  }
+},
+{
+  "model": "cms.author",
+  "pk": 2,
+  "fields": {
+    "user": null,
+    "name": "Baka",
+    "surname": "Mrkic",
+    "birth_date": "1996-04-24"
+  }
+},
+{
+  "model": "cms.author",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "laki"
+    ],
+    "name": "Marija",
+    "surname": "Ajkovic",
+    "birth_date": "2023-04-18"
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 1,
+  "fields": {
+    "created": "2023-04-17T22:01:49.315Z",
+    "title": "Ode pijesak iz Morace",
+    "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "author": 1
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 2,
+  "fields": {
+    "created": "2023-04-17T22:02:53.868Z",
+    "title": "Nema vode na primorje",
+    "body": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+    "author": 2
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 3,
+  "fields": {
+    "created": "2023-04-18T07:19:16.138Z",
+    "title": "Velike guzve u Podgorici",
+    "body": "but the majority have suffered alteration in some form, by injected humour, or randomised",
+    "author": 2
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 4,
+  "fields": {
+    "created": "2023-04-21T09:44:22.488Z",
+    "title": "Biciklo/Trotinet ili voznja kolima",
+    "body": "fewfewewgarga rgreagerr3qg ergq3g34g ergrgq3gfewfewewgarga rgreagerr3qg ergq3g34g ergrgq3gfewfewewgarga rgreagerr3qg ergq3g34g ergrgq3gfewfewewgarga rgreagerr3qg ergq3g34g ergrgq3gfewfewewgarga rgreagerr3qg ergq3g34g ergrgq3g",
+    "author": 1
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 5,
+  "fields": {
+    "created": "2023-04-26T08:49:06.995Z",
+    "title": "Dobro jutro Podgorice",
+    "body": "Lijep i suncan dan sa slabim do umjerenim sjevernim vjetrom",
+    "author": 3
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 6,
+  "fields": {
+    "created": "2023-04-26T09:19:14.874Z",
+    "title": "Nevrijeme u glavnom gradu.",
+    "body": "Juce je u Podgorici padao veliki grad.",
+    "author": 2
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 7,
+  "fields": {
+    "created": "2023-04-27T08:27:11.781Z",
+    "title": "Biciklom na posao",
+    "body": "Umjesto motornim vozilom danas sam biciklom na posao.",
+    "author": 1
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 8,
+  "fields": {
+    "created": "2023-04-27T09:43:40.361Z",
+    "title": "fewfwf",
+    "body": "wefeff",
+    "author": 3
+  }
+},
+{
+  "model": "cms.post",
+  "pk": 9,
+  "fields": {
+    "created": "2023-04-28T08:37:27.999Z",
+    "title": "Poci do neradnika u socijalno",
+    "body": "Idem do socijalnog da promijenim reon u na ceku da bi mi nadoknada stizala na kucu. Da ne bih cekao red u postu.",
+    "author": 1
+  }
+},
+{
+  "model": "cms.comment",
+  "pk": 1,
+  "fields": {
+    "created": "2023-04-18T13:25:07.080Z",
+    "body": "Velike guzve i piju se kafe u radno vrijeme.",
+    "author": 1,
+    "post": 3
+  }
+},
+{
+  "model": "cms.comment",
+  "pk": 2,
+  "fields": {
+    "created": "2023-04-18T21:48:39.246Z",
+    "body": "komentar",
+    "author": 2,
+    "post": 1
+  }
+},
+{
+  "model": "cms.comment",
+  "pk": 3,
+  "fields": {
+    "created": "2023-04-24T08:29:34.228Z",
+    "body": "samo biciklo treba vozit",
+    "author": 3,
+    "post": 4
+  }
+},
+{
+  "model": "cms.comment",
+  "pk": 4,
+  "fields": {
+    "created": "2023-04-24T08:30:09.191Z",
+    "body": "ja bih radije trotinet",
+    "author": 2,
+    "post": 4
+  }
+},
+{
+  "model": "cms.comment",
+  "pk": 5,
+  "fields": {
+    "created": "2023-04-24T09:41:26.955Z",
+    "body": "a mozda i pjeske",
+    "author": 3,
+    "post": 4
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-04-18T21:48:39.247Z",
+    "user": [
+      "laki"
+    ],
+    "content_type": [
+      "cms",
+      "comment"
+    ],
+    "object_id": "2",
+    "object_repr": "komentar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-04-21T09:44:22.488Z",
+    "user": [
+      "laki"
+    ],
+    "content_type": [
+      "cms",
+      "post"
+    ],
+    "object_id": "4",
+    "object_repr": "fewfewewgarga rgreagerr3qg ergq3g34g ergrgq3gfewfewewgarga rgreagerr3qg ergq3g34g ergrgq3gfewfewewgarga rgreagerr3qg ergq3g34g ergrgq3gfewfewewgarga rgreagerr3qg ergq3g34g ergrgq3gfewfewewgarga rgreag",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-04-24T08:28:20.052Z",
+    "user": [
+      "laki"
+    ],
+    "content_type": [
+      "cms",
+      "author"
+    ],
+    "object_id": "3",
+    "object_repr": "Marija Ajkovic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-04-24T08:29:34.229Z",
+    "user": [
+      "laki"
+    ],
+    "content_type": [
+      "cms",
+      "comment"
+    ],
+    "object_id": "3",
+    "object_repr": "samo biciklo treba vozit",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-04-24T08:30:09.194Z",
+    "user": [
+      "laki"
+    ],
+    "content_type": [
+      "cms",
+      "comment"
+    ],
+    "object_id": "4",
+    "object_repr": "ja bih radije trotinet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-04-24T09:41:26.957Z",
+    "user": [
+      "laki"
+    ],
+    "content_type": [
+      "cms",
+      "comment"
+    ],
+    "object_id": "5",
+    "object_repr": "a mozda i pjeske",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
