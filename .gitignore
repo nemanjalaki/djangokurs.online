@@ -63,6 +63,7 @@ db.sqlite3-journal
 
 #db backup
 dump.json
+data.json
 # Flask stuff:
 instance/
 .webassets-cache
@@ -133,3 +134,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+utils/

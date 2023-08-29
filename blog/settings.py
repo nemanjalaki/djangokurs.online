@@ -75,7 +75,7 @@ MIDDLEWARE = [
 
 # CSRF_TRUSTED_ORIGINS = ["http://localhost:1337"]
 # CSRF_TRUSTED_ORIGINS = ["http://localhost:8000"]
-CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS").split(" ")
+CSRF_TRUSTED_ORIGINS = env("CSRF_TRUSTED_ORIGINS").split(" ")
 
 
 #to run the Django app behind an HTTPS proxy
