@@ -1,4 +1,0 @@
-# copy project dir to home on remote server
-scp -r djangokurs.online d:~
-# usign scp to copy files from local to server
-scp -r nginx d:/home/ubuntu/djangokurs.online
