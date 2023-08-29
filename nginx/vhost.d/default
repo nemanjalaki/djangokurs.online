@@ -1,4 +1,4 @@
 location /static/ {
-  alias /home/app/web/staticfiles/;
+  alias /home/djangokurs.online/web/staticfiles/;
   add_header Access-Control-Allow-Origin *;
 }

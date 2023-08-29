@@ -10,8 +10,6 @@ services:
       - static_volume:/home/djangokurs.online/web/staticfiles
     expose:
       - 8000
-    # volumes: 
-    #   - ./django
     env_file: 
       - ./blog/.env
     depends_on:

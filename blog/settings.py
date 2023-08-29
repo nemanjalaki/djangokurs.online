@@ -122,12 +122,12 @@ DATABASES = {
         # 'HOST': "127.0.0.1",
         # 'PORT': "5432",  # 5432 by default
 
-        'ENGINE': env("DB_ENGINE"),
-        'NAME': env("DB_NAME"),
-        'USER': env("DB_USER"),
-        'PASSWORD': env("DB_PASS"),
-        'HOST': env("DB_HOST"),
-        'PORT': env("DB_PORT"),  # 5432 by default
+        'ENGINE': env("SQL_ENGINE"),
+        'NAME': env("SQL_DATABASE"),
+        'USER': env("SQL_USER"),
+        'PASSWORD': env("SQL_PASSWORD"),
+        'HOST': env("SQL_HOST"),
+        'PORT': env("SQL_PORT"),  # 5432 by default
     }
 }
 
